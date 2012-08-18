@@ -2,10 +2,10 @@ package maze;
 
 public class EmptySpace implements MazePiece
 {
-    MazePiece north;
-    MazePiece east;
-    MazePiece south;
-    MazePiece west;
+    MazePiece north = new RunsEastWestWall();
+    MazePiece east = new RunsNorthSouthWall();
+    MazePiece south = new RunsEastWestWall();;
+    MazePiece west = new RunsNorthSouthWall();
 
     @Override
     public MazePiece getNorthPiece()
